@@ -1,0 +1,101 @@
+<div class="container mt-2 border border-dark">
+    <h5>Contact form</h5>
+    <form action="#">
+      <div class="row">
+        <!—To add textbox -- >
+        <div class="col">
+          <label class="form-label"> User Name: </label>
+          <input
+            type="text"
+            class="form-control"
+            id=" uid "
+            placeholder="Enter user_name"
+            name=" uid "
+            required
+          />
+        </div>
+        <!—To add textbox -- >
+        <div class="col">
+          <label for="emid" class="form-label"> Email Id: </label>
+          <input
+            type="email"
+            class="form-control"
+            id=" emid "
+            placeholder="Enter email_id"
+            name=" emid "
+            required
+          />
+        </div>
+      </div>
+      <!—To add textarea -- >
+      <div>
+        <label for="txt" class="form-label"> Message: </label>
+        <textarea
+          class="form-control"
+          id="txt"
+          placeholder="Enter message"
+          name="txt"
+          required
+        ></textarea>
+      </div>
+      <div class="row">
+        <!—start of Responsive grids -- >
+        <!—To add radio buttons -- >
+        <div class="col-md-4 d-flex">
+          <label for="gender" class="form-label m-2"> Gender: </label>
+          <div class="form-check m-2">
+            <input
+              class="form-check-input"
+              value="male"
+              type="radio"
+              name="gender"
+              required
+            />
+            <label class="form-check-label">Male</label>
+          </div>
+          <div class="form-check m-2">
+            <input
+              class="form-check-input"
+              value="female"
+              type="radio"
+              name="gender"
+              required
+            />
+            Bootstrap 5 45
+            <label class="form-check-label">Female</label>
+          </div>
+        </div>
+        <!—To add dropdown -- >
+        <div class="col-md-6">
+          <label>Select City</label>
+          <select class="form-select">
+            <optgroup label="Gujarat">
+              <option>Ahmedabad</option>
+              <option>Gandhinagar</option>
+            </optgroup>
+            <optgroup label="Rajasthan">
+              <option>Jaipur</option>
+            </optgroup>
+          </select>
+        </div>
+        <!—To add checkbox -- >
+        <div class="col-md-2">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="Checked"
+              name="remembers"
+              required
+            />
+            <label class="form-check-label" for="Checked"> I agree</label>
+          </div>
+        </div>
+        <!—end of Responsive grids -- >
+      </div>
+      <button type="submit" class="btn btn-danger d-block mx-auto my-4">
+        Submit
+      </button>
+    </form>
+  </div>
+  
